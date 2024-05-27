@@ -19,7 +19,7 @@ func CreatePixPayment() ([]byte, string, error) {
 	client := payment.NewClient(config)
 
 	request := payment.Request{
-		TransactionAmount: 100,
+		TransactionAmount: 1,
 		Description:       "My product",
 		PaymentMethodID:   "pix",
 		Payer: &payment.PayerRequest{
